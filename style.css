@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Rubik:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: #068FFF;
+    transition: 0.3s;
+}
+
+.dark {
+    background-color: #1c2541;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-box {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 650px;
+    height: 400px;
+    margin-top: 70px;
+    box-shadow: 0px 10px 50px -4px #5e5e5e;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+h1 {
+    color: #0b132b;
+    position: absolute;
+    top: 30px;
+    font-family: 'Chakra Petch', sans-serif;
+    letter-spacing: 3px;
+    font-size: 45px;
+}
+
+span {
+    font-size: 60px;
+    color: #0b132b;
+}
+
+.min-and-sec {
+    position: relative;
+    margin-bottom: 50px;
+    border: 2px solid #0b132b;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.dark .min-and-sec {
+    border: 2px solid #fff;
+}
+
+
+button {
+    padding: 13px 30px 13px 30px;
+    font-size: 15px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: #0b132b;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    bottom: 60px;
+    border: 2px solid #0b132b;
+}
+
+button:hover {
+    background-color: #1c2541;
+    border: 2px solid #1c2541;
+
+}
+
+.break {
+    display: none;
+}
+
+.reset,
+.break-reset {
+    display: none;
+    position: absolute;
+    bottom: 60px;
+}
+
+a {
+    color: rgb(162, 0, 255);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.dark a {
+    color: rgb(246, 169, 241);
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.switch {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(39, 38, 38);
+    position: relative;
+    cursor: pointer;
+}
+
+.flicker {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: 0.3s;
+    box-shadow: inset 4px 4px 4px rgb(255, 255, 255),
+        inset -4px -4px 4px rgb(195 193 198 / 90%);
+}
+
+.moon {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 45px;
+}
+
+.dark .flicker {
+    transform: translateX(40px);
+}
+
+
+.main-text {
+    padding: 30px;
+    margin-bottom: 100px;
+}
+
+.square {
+    width: 98%;
+    margin: 1%;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.dark .square {
+    background-color: rgb(71, 71, 71);
+}
+
+.dark .timer-box {
+    background-color: #0b132b;
+    border: 2px solid #fff;
+    box-shadow: none;
+}
+
+.dark .timer-box h1 {
+    color: #fff;
+}
+
+.dark .timer-box span {
+    color: #fff;
+}
+
+.dark button {
+    background-color: #fff;
+    color: #0b132b;
+    border: 2px solid #fff;
+}
+
+.dark button:hover {
+    background-color: #bdbcbc;
+    border: 2px solid #bdbcbc;
+
+}
+
+@media screen and (max-width : 430px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    .timer-box {
+        width: 90%;
+    }
+}
+
