@@ -39,6 +39,7 @@ body {
     align-items: center;
     height: 100%;
     position: relative;
+    padding: 1rem;
 }
 
 h1 {
@@ -48,20 +49,27 @@ h1 {
     font-family: 'Chakra Petch', sans-serif;
     letter-spacing: 3px;
     font-size: 45px;
+    text-align: center;
 }
 
-span {
+span.time {
     font-size: 60px;
     color: #0b132b;
+    display: flex;
+    width: 170px;
+    text-align: center;
 }
 
 .min-and-sec {
-    position: relative;
     margin-bottom: 50px;
     border: 2px solid #0b132b;
-    width: 200px;
     text-align: center;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding-left: 10px;
 }
 
 .dark .min-and-sec {
@@ -205,4 +213,3 @@ header {
         width: 90%;
     }
 }
-
